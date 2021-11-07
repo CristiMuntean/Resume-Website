@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Muntean Cristian - Interactive Resume</title>
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/25b6e20f48.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <section id="title" class="colored-section">
+
+    <div class="loader-wrapper2">
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <nav class="main-nav colored-section">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <ul class="mainMenu">
+          <li class="li-leftmost"><a href="#profile">Profile</a></li>
+          <li class="li-right"><a href="#education">Education</a></li>
+          <li class="li-right"><a href="#abilities">Abilities</a></li>
+          <li class="li-right"><a class="disabled" href="#">Projects</a></li>
+          <li class="li-right"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#abilities">Abilities</a>
+        <a class="disabled" href="#">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section id="contact-form">
+        <div class="container">
+          <button class="xBtn"></button>
+          <h2>Let's get in touch!</h2>
+          <form action="https://formspree.io/f/xoqyzpnv" method="post" id="email-form">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+              <label for="Message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+      </section>
+      <h1>Cristian Muntean</h1>
+      <h4>An interactive resume</h4>
+      <button class="contBtn">Contact me</button>
+
+    </div>
+  </section>
+
+  <section id="profile" class="white-section">
+    <div class="container reveal">
+
+      <h2>Profile</h2>
+      <hr class="hr-style-dark">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-4 col-lg-4">
+            <h3>About me</h3>
+            <p>I am a 19 year old student that is likes to code and learn new things. During my free time I enjoy doing
+              any kind of physical activity. I also learned to work really well in a team, thanks to 8 years that I
+              spent playing waterpolo for
+              the local team.</p>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="wrapper">
+              <img class="profile-photo" src="photos/profile.jpg" alt="photo of me">
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4">
+            <h3>Details</h3>
+            <ul style="list-style:none;">
+              <li><strong>Name:</strong></li>
+              <li>Cristian Muntean</li>
+              <li><strong>Age:</strong></li>
+              <li>19</li>
+              <li><strong>Location:</strong></li>
+              <li>Cluj-Napoca</li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="colored-section">
+    <div class="container reveal">
+      <h2>Education</h2>
+      <hr class="hr-style-light">
+
+      <div class="container-fluid" style="padding-top:5%;">
+        <div class="row" style="padding-bottom:5%;">
+          <div class="col-xl-4 col-lg-4">
+            <h3>Technical University of Cluj-Napoca</h3>
+            <p>October 2020 - July 2024</p>
+          </div>
+          <div class="col-xl-8 col-lg-8">
+            <p>I am currently in the second year of university and I'm studying computer science. In the first year I
+              worked in C and I also completed a Python course on the side. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4">
+            <h3>Liceul de Informatica "Tiberiu Popoviciu"</h3>
+            <p>Sept 2016 - June 2020</p>
+          </div>
+          <div class="col-xl-8 col-lg-8">
+            <p>During my highschool years I learned for the first time the basics of programming. I started with C++ and
+              then in my senior year I learned C# and some SQL in order to complete my final year project </p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="abilities" class="white-section">
+    <div class="container reveal">
+
+      <h2>Abilities</h2>
+      <hr class="hr-style-dark">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6">
+            <h3>Skills</h3>
+            <div class="row">
+              <ul style="list-style-type:none;">
+                <li>
+                  <span class="skill">HTML</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">CSS</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">Bootstrap Framework</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">Python</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">C++</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">C#</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">Java</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">SQL</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+                <li>
+                  <span class="skill">C</span>
+                  <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="container-fluid cont-fl">
+              <div class="row">
+                <h3>Languages</h3>
+                <ul style="list-style-type:none;">
+                  <li>
+                    <span class="skill">Romanian</span>
+                    <span class="rating">mother tongue</span>
+                  </li>
+                  <li>
+                    <span class="skill">English</span>
+                    <span class="rating">fluent C2 level</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <h3>Tools</h3>
+                <ul style="list-style-type:none;">
+                  <li>
+                    <span class="skill">MS Office</span>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <h3>Soft skills</h3>
+                <ul style="list-style-type:none;">
+                  <li>
+                    <span class="skill">Teamwork</span>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </li>
+                  <li>
+                    <span class="skill">Problem Solving</span>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </li>
+                  <li>
+                    <span class="skill">Critical Thinking</span>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </li>
+                  <li>
+                    <span class="skill">Work Ethic</span>
+                    <span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- <section id="projects" class="colored-section">
+    <div class="container">
+
+
+      <h2>Personal Projects</h2>
+      <hr>
+      <div class="">
+        <p>Snake game</p>
+        <p>First small project using pygame. The game was written in python and i learned the fundamentals of pygame during the development of this project </p>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="colored-section">
+    <div class="container">
+
+      <h2>Contact</h2>
+      <hr style="border-top: 3px solid white;">
+      <ul>
+        <li><a href="https://www.facebook.com/cristi.muntean.98/">Facebook</i></a></li>
+        <li><a href="https://www.linkedin.com/in/muntean-cristian/">Linkedin</i></a></li>
+        <li><a href="https://github.com/CristiMuntean">Gituhb</a></li>
+        <li><a href="https://codepen.io/cristimuntean">Codepen</a></li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- JS -->
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
