@@ -660,7 +660,7 @@ h4::before {
     top: -140%;
   }
   to {
-    top: 0%;
+    top: -3%;
   }
 }
 
@@ -669,7 +669,7 @@ h4::before {
     top: -140%;
   }
   to {
-    top: 0%;
+    top: -3%;
   }
 }
 
@@ -680,7 +680,7 @@ h4::before {
 
 @-webkit-keyframes hide-form {
   from {
-    top: 0%;
+    top: -3%;
   }
   to {
     top: -140%;
@@ -689,7 +689,7 @@ h4::before {
 
 @keyframes hide-form {
   from {
-    top: 0%;
+    top: -3%;
   }
   to {
     top: -140%;
