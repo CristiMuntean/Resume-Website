@@ -1,4 +1,5 @@
 $(window).on('load', function () {
+    $(this).scrollTop(0);
     // event listeners to toggle the mobile navigation menu and toggle between the 'X' and the three lines
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
@@ -67,6 +68,5 @@ $(window).on('load', function () {
                 element.classList.add('reveal-active');
         })
     }
-
 
 });
