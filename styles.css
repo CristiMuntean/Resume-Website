@@ -650,11 +650,6 @@ h4::before {
   color: white;
 }
 
-.form-group input:focus-within,
-.form-group textarea:focus-within {
-  color: white;
-}
-
 .form-active {
   -webkit-animation: slide-form 0.4s forwards;
           animation: slide-form 0.4s forwards;
@@ -688,7 +683,7 @@ h4::before {
     top: 100px;
   }
   to {
-    top: -100%;
+    top: -140%;
   }
 }
 
@@ -697,7 +692,7 @@ h4::before {
     top: 100px;
   }
   to {
-    top: -100%;
+    top: -140%;
   }
 }
 

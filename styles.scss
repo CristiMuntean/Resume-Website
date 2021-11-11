@@ -491,7 +491,7 @@ h4::before {
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
-
+    
     .container {
         height: 80vh;
         width: 90%;
@@ -562,10 +562,7 @@ h4::before {
         font-size: 1rem;
         color:white;
     }
-    input:focus-within,
-    textarea:focus-within{
-        color:white;
-    }
+    
     
 }
 
@@ -593,7 +590,7 @@ h4::before {
     }
 
     to {
-        top: -100%;
+        top: -140%;
     }
 }
 
