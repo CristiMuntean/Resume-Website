@@ -912,7 +912,7 @@ h4::before {
   #contact ul {
     padding-left: 0;
   }
-  #contact ul .item-1 {
+  #contact ul .item-1, #contact ul .item-2, #contact ul .item-3, #contact ul .item-4 {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
