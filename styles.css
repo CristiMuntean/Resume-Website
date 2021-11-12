@@ -868,14 +868,57 @@ h4::before {
   margin: 15px auto 0;
   padding-bottom: 30px;
   list-style: none;
-  display: table;
-  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 45%;
   text-align: center;
 }
 
+#contact ul .item-1,
+#contact ul .item-2,
+#contact ul .item-3,
+#contact ul .item-4 {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
 #contact li {
-  display: table-cell;
   position: relative;
   padding: 15px 0;
+}
+
+@media (max-width: 800px) {
+  #title h1,
+  #title h4,
+  #title .contBtn,
+  #title .hamburger {
+    margin-left: 35px;
+  }
+  #profile {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #education {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 5%;
+  }
+  #contact ul {
+    padding-left: 0;
+  }
+  #contact ul .item-1 {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .loader {
+    left: 35%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

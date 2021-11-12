@@ -491,7 +491,7 @@ h4::before {
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
-    
+
     .container {
         height: 80vh;
         width: 90%;
@@ -526,6 +526,7 @@ h4::before {
     width: 100%;
     margin-top: 20px;
     position: relative;
+
     input,
     textarea {
         position: relative;
@@ -542,7 +543,8 @@ h4::before {
     textarea {
         resize: none;
     }
-    label{
+
+    label {
         pointer-events: none;
         color: black;
         position: absolute;
@@ -555,15 +557,14 @@ h4::before {
     input:focus+label,
     textarea:focus+label,
     input:not(:placeholder-shown)+label,
-    textarea:not(:placeholder-shown)+label
-    {
-        top:-15px;
-        left:6px;
+    textarea:not(:placeholder-shown)+label {
+        top: -15px;
+        left: 6px;
         font-size: 1rem;
-        color:white;
+        color: white;
     }
-    
-    
+
+
 }
 
 .form-active {
@@ -753,15 +754,57 @@ h4::before {
         margin: 15px auto 0;
         padding-bottom: 30px;
         list-style: none;
-        display: table;
-        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
         text-align: center;
+
+        .item-1,
+        .item-2,
+        .item-3,
+        .item-4 {
+            flex: 25%;
+        }
     }
 
     li {
-        display: table-cell;
         position: relative;
         padding: 15px 0;
+    }
+}
+
+@media(max-width:800px) {
+    #title {
+
+        h1,
+        h4,
+        .contBtn,
+        .hamburger {
+            margin-left: 35px;
+        }
+    }
+
+    #profile {
+        height: fit-content;
+    }
+
+    #education {
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+
+    #contact {
+        ul {
+            padding-left: 0;
+
+            .item-1 {
+                flex: 100%;
+            }
+        }
+    }
+
+    .loader {
+        left: 35%;
     }
 
 }
