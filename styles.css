@@ -868,7 +868,7 @@ h4::before {
 }
 
 @media (min-width: 801px) {
-  :hover {
+  #abilities ul li:hover {
     background-color: #E8E8E8;
     -webkit-animation: enlarge 0.1s ease forwards;
             animation: enlarge 0.1s ease forwards;
