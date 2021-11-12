@@ -7,7 +7,6 @@ $(window).on('load', function () {
     menu_btn.addEventListener('click', function () {
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-        document.querySelector('body').classList.toggle('lock-scroll');
     })
 
 
@@ -17,25 +16,15 @@ $(window).on('load', function () {
         element.addEventListener('click', function () {
             menu_btn.classList.remove('is-active');
             mobile_menu.classList.remove('is-active');
-            document.querySelector('body').classList.remove('lock-scroll');
         })
     });
 
-
-    var x = window.matchMedia("(min-width:1001px");
-    x.addEventListener("change", function () {
-        if (mobile_menu.className == "mobile-nav is-active" && !x.matches) //if we change the width while being in the mobile nav menu(where the scroll is locked) into a width
-            document.querySelector('body').classList.add('lock-scroll'); //that is bigger than the mobile phone width range then the scroll will be unlocked, but if we come
-        else document.querySelector('body').classList.remove('lock-scroll'); //back to the mobile phone width then the scroll will be locked back until we close the mobile nav
-    });
-
-    // blur background and lock screen when contact form is active
+    // blur background when contact form is active
     const contactBtn = document.querySelector('.contBtn');
     const closeContact = document.querySelector('.xBtn');
     const form = document.getElementById('contact-form');
     contactBtn.addEventListener("click", function () {
         form.classList.add('form-active');
-        document.querySelector('body').classList.add('lock-scroll');
         document.querySelector('#title .container nav').classList.add('blur');
         document.querySelector('#title .container h1').classList.add('blur');
         document.querySelector('#title .container h4').classList.add('blur');
@@ -51,7 +40,6 @@ $(window).on('load', function () {
         setTimeout(() => {
             form.classList.remove('form-inactive');
         }, 800);
-        document.querySelector('body').classList.remove('lock-scroll');
     })
 
     // reveal section on scroll

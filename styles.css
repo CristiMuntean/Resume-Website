@@ -359,7 +359,7 @@ p {
   display: block;
   z-index: 99;
   background-color: #09141b;
-  padding-top: 250px;
+  padding-top: 10%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -391,11 +391,6 @@ p {
 
 .mobile-nav.is-active {
   right: 0;
-}
-
-.lock-scroll {
-  max-height: 100vh;
-  overflow-y: hidden;
 }
 
 @media (min-width: 1001px) {
@@ -793,12 +788,12 @@ h4::before {
   padding: 0.665rem 0;
 }
 
-.skill {
+#abilities .skill {
   display: inline-block;
   width: 60%;
 }
 
-.rating {
+#abilities .rating {
   float: right;
 }
 
@@ -870,23 +865,23 @@ h4::before {
 @media (min-width: 801px) {
   #abilities ul li:hover {
     background-color: #E8E8E8;
-    -webkit-animation: enlarge 0.1s ease forwards;
-            animation: enlarge 0.1s ease forwards;
+    -webkit-animation: space 0.1s ease forwards;
+            animation: space 0.1s ease forwards;
   }
-  @-webkit-keyframes enlarge {
+  @-webkit-keyframes space {
     from {
-      font-size: 1.2rem;
+      letter-spacing: normal;
     }
     to {
-      font-size: 1.3rem;
+      letter-spacing: 1px;
     }
   }
-  @keyframes enlarge {
+  @keyframes space {
     from {
-      font-size: 1.2rem;
+      letter-spacing: normal;
     }
     to {
-      font-size: 1.3rem;
+      letter-spacing: 1px;
     }
   }
 }
@@ -897,6 +892,12 @@ h4::before {
   #title .contBtn,
   #title .hamburger {
     margin-left: 35px;
+  }
+  #title h1 {
+    width: 7ch;
+  }
+  #title h4 {
+    width: 10ch;
   }
   #profile {
     height: -webkit-fit-content;
@@ -919,6 +920,63 @@ h4::before {
   }
   .loader {
     left: 35%;
+  }
+  .mobile-nav {
+    padding-top: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-nav {
+    padding-top: 15%;
+  }
+  h1 {
+    font-size: 2.625rem;
+  }
+  #contact-form {
+    font-size: 0.9rem;
+    top: -1000px;
+  }
+  #contact-form .container textarea {
+    height: 4rem;
+  }
+  @-webkit-keyframes slide-form {
+    from {
+      top: -1000px;
+    }
+    to {
+      top: -10%;
+    }
+  }
+  @keyframes slide-form {
+    from {
+      top: -1000px;
+    }
+    to {
+      top: -10%;
+    }
+  }
+  @-webkit-keyframes hide-form {
+    from {
+      top: -10%;
+    }
+    to {
+      top: -1000px;
+    }
+  }
+  @keyframes hide-form {
+    from {
+      top: -10%;
+    }
+    to {
+      top: -1000px;
+    }
+  }
+  #abilities ul li {
+    font-size: 1rem;
+  }
+  .loader {
+    left: 30%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
