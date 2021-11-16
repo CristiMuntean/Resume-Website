@@ -7,6 +7,8 @@ $(window).on('load', function () {
     menu_btn.addEventListener('click', function () {
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
+        document.querySelector('html').classList.toggle('lock-scroll');
+        document.querySelector('body').classList.toggle('lock-scroll');
     })
 
 
@@ -25,6 +27,7 @@ $(window).on('load', function () {
     const form = document.getElementById('contact-form');
     contactBtn.addEventListener("click", function () {
         form.classList.add('form-active');
+        document.querySelector('#title .container #useful-links .links').classList.add('blur');
         document.querySelector('#title .container nav').classList.add('blur');
         document.querySelector('#title .container h1').classList.add('blur');
         document.querySelector('#title .container h4').classList.add('blur');
@@ -32,6 +35,7 @@ $(window).on('load', function () {
     });
     closeContact.addEventListener('click', function () {
         form.classList.remove('form-active');
+        document.querySelector('#title .container #useful-links .links').classList.remove('blur');
         document.querySelector('#title .container nav').classList.remove('blur');
         document.querySelector('#title .container h1').classList.remove('blur');
         document.querySelector('#title .container h4').classList.remove('blur');
