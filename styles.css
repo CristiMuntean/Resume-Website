@@ -1538,6 +1538,9 @@ h4::before {
   #contact-form .container .xBtn {
     top: 1%;
   }
+  #contact-form .container .xBtn::after, #contact-form .container .xBtn::before {
+    background-color: white;
+  }
   .main-nav .mainMenu {
     display: none;
   }
