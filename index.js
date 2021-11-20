@@ -21,30 +21,71 @@ $(window).on('load', function () {
         })
     });
 
-    // blur background when contact form is active
+    // hide background when contact form is active and slide contact form in viewport
     const contactBtn = document.querySelector('.contBtn');
-    const closeContact = document.querySelector('.xBtn');
-    const form = document.getElementById('contact-form');
     contactBtn.addEventListener("click", function () {
-        form.classList.add('form-active');
-        document.querySelector('#title .container #useful-links .links').classList.add('blur');
-        document.querySelector('#title .container nav').classList.add('blur');
-        document.querySelector('#title .container h1').classList.add('blur');
-        document.querySelector('#title .container h4').classList.add('blur');
-        document.querySelector('#title .container .contBtn').classList.add('blur');
+
+        document.querySelector('#title #useful-links .links').classList.add('fade');
+        document.querySelector('#title nav').classList.add('fade');
+        document.querySelector('#title h1').classList.add('fade');
+        document.querySelector('#title h4').classList.add('fade');
+        document.querySelector('#title .contBtn').classList.add('fade');
+        document.querySelector('#title .more').classList.add('fade');
+
+        document.querySelector('#title #contact-form').classList.add('active-form-sect');
+        document.querySelector('#title #contact-form .container .form .contact-form').classList.add('active-form-form');
+        document.querySelector('#title #contact-form .container .form .contact-info').classList.add('active-form-info');
+        document.querySelector('#title #contact-form .container .form').classList.add('active-form-box');
     });
-    closeContact.addEventListener('click', function () {
-        form.classList.remove('form-active');
-        document.querySelector('#title .container #useful-links .links').classList.remove('blur');
-        document.querySelector('#title .container nav').classList.remove('blur');
-        document.querySelector('#title .container h1').classList.remove('blur');
-        document.querySelector('#title .container h4').classList.remove('blur');
-        document.querySelector('#title .container .contBtn').classList.remove('blur');
-        form.classList.add('form-inactive');
+    const xBtn = document.querySelector('.xBtn');
+    xBtn.addEventListener('click', function () {
+
+
+        document.querySelector('#title #contact-form .container .form .contact-form').classList.add('inactive-form-form');
+        document.querySelector('#title #contact-form .container .form .contact-info').classList.add('inactive-form-info');
+        document.querySelector('#title #contact-form .container .form').classList.add('inactive-form-box');
         setTimeout(() => {
-            form.classList.remove('form-inactive');
-        }, 800);
-    })
+            document.querySelector('#title #contact-form').classList.add('inactive-form-sect');
+        }, 500);
+
+        setTimeout(() => {
+
+            document.querySelector('#title #contact-form').classList.remove('inactive-form-sect');
+            document.querySelector('#title #contact-form .container .form .contact-form').classList.remove('inactive-form-form');
+            document.querySelector('#title #contact-form .container .form .contact-info').classList.remove('inactive-form-info');
+            document.querySelector('#title #contact-form .container .form').classList.remove('inactive-form-box');
+            document.querySelector('#title #contact-form').classList.remove('active-form-sect');
+            document.querySelector('#title #contact-form .container .form .contact-form').classList.remove('active-form-form');
+            document.querySelector('#title #contact-form .container .form .contact-info').classList.remove('active-form-info');
+            document.querySelector('#title #contact-form .container .form').classList.remove('active-form-box');
+            document.querySelector('#title nav').classList.remove('fade');
+
+
+            setTimeout(() => {
+                document.querySelector('#title #useful-links .links').classList.add('fadeIn');
+                document.querySelector('#title nav').classList.add('fadeIn');
+                document.querySelector('#title h1').classList.add('fadeIn');
+                document.querySelector('#title h4').classList.add('fadeIn');
+                document.querySelector('#title .contBtn').classList.add('fadeIn');
+                document.querySelector('#title .more').classList.add('fadeIn');
+
+
+                document.querySelector('#title #useful-links .links').classList.remove('fade');
+                document.querySelector('#title h1').classList.remove('fade');
+                document.querySelector('#title h4').classList.remove('fade');
+                document.querySelector('#title .contBtn').classList.remove('fade');
+                document.querySelector('#title .more').classList.remove('fade');
+                document.querySelector('#title #useful-links .links').classList.remove('fadeIn');
+                document.querySelector('#title nav').classList.remove('fadeIn');
+                document.querySelector('#title h1').classList.remove('fadeIn');
+                document.querySelector('#title h4').classList.remove('fadeIn');
+                document.querySelector('#title .contBtn').classList.remove('fadeIn');
+                document.querySelector('#title .more').classList.remove('fadeIn');
+            }, 1000);
+            
+        }, 500);
+    });
+
 
     // reveal section on scroll
     window.addEventListener('scroll', reveal);
@@ -61,4 +102,23 @@ $(window).on('load', function () {
         })
     }
 
+
+    const inputs = document.querySelectorAll('.input');
+
+    function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+    }
+
+    function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+            parent.classList.remove("focus");
+        }
+    }
+
+    inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+    });
 });

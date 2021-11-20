@@ -66,32 +66,67 @@
       <section id="contact-form">
         <div class="container">
           <button class="xBtn"></button>
-          <h2>Let's get in touch!</h2>
-          <form action="https://formspree.io/f/xoqyzpnv" method="post" id="email-form">
-            <div class="form-group">
-              <input autocomplete="nope" type="text" id="firstName" name="firstName" placeholder=" ">
-              <label for="firstName">First Name</label>
+          <div class="form">
+            <div class="contact-info">
+              <h3 class="title"> About me </h3>
+              <p class="text">
+                I'm Cristian Muntean, a 19 year old computer science student that currently studies at TUCN. <br> <br> I am open to work with you for any project that you might have in mind, so don't hesitate to hit me up!
+              </p>
+              <div class="social-media">
+                <p class="text">Connect with me: </p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/cristi.muntean.98/">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://github.com/CristiMuntean">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.instagram.com/cristi.muntean.15/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/muntean-cristian/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-
-            <div class="form-group">
-              <input autocomplete="nope" type="text" id="lastName" name="lastName" placeholder=" ">
-              <label for="lastName">Last Name</label>
+            
+            
+            <div class="contact-form">
+              <span class="circle one"></span>
+              <span class="circle two"></span>
+              
+              <form action="https://formspree.io/f/xoqyzpnv" method="post" id="email-form">
+                <h3 class="title">Let's get in touch</h3>
+                <div class="input-container">
+                  <input autocomplete="nope" type="text" name = "FristName" class="input" required>
+                  <label for="FirstName">First Name</label>
+                  <span>First Name</span>
+                </div>
+                
+                <div class="input-container">
+                  <input autocomplete="nope" type="text" name = "LastName" class="input" required>
+                  <label for="LastName">Last Name</label>
+                  <span>Last Name</span>
+                </div>
+                
+                <div class="input-container">
+                  <input type="email" name = "Email" class="input" required>
+                  <label for="Email">Email</label>
+                  <span>Email</span>
+                </div>
+                
+                <div class="input-container textarea">
+                  <textarea name="Message" class="input" required></textarea>
+                  <label for="Message">Message</label>
+                  <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btn">
+              </form>
             </div>
-
-            <div class="form-group">
-              <input type="email" id="email" name="email" placeholder=" ">
-              <label for="email">Email</label>
-            </div>
-
-            <div class="form-group">
-              <textarea name="message" id="message" cols="30" rows="10" placeholder=" "></textarea>
-              <label for="Message">Message</label>
-            </div>
-
-            <button type="submit">Submit</button>
-          </form>
+            
+          </div>
         </div>
-
       </section>
 
       <section id="useful-links">
