@@ -18,6 +18,8 @@ $(window).on('load', function () {
         element.addEventListener('click', function () {
             menu_btn.classList.remove('is-active');
             mobile_menu.classList.remove('is-active');
+            document.querySelector('html').classList.remove('lock-scroll');
+            document.querySelector('body').classList.remove('lock-scroll');
         })
     });
 
